@@ -45,9 +45,9 @@ Primehack_setEmulationFolder() {
 #SetupSaves
 Primehack_setupSaves(){
 	unlink "$savesPath/primehack/states"
-	linkToSaveFolder primehack GC "$HOME/.var/app/io.github.shiiion.primehack/data/dolphin-emu/GC"
-	linkToSaveFolder primehack Wii "$HOME/.var/app/io.github.shiiion.primehack/data/dolphin-emu/Wii"
-	linkToSaveFolder primehack StateSaves "$HOME/.var/app/io.github.shiiion.primehack/data/dolphin-emu/StateSaves/"
+	moveSaveFolder primehack GC "$HOME/.var/app/io.github.shiiion.primehack/data/dolphin-emu/GC"
+	moveSaveFolder primehack Wii "$HOME/.var/app/io.github.shiiion.primehack/data/dolphin-emu/Wii"
+	moveSaveFolder primehack StateSaves "$HOME/.var/app/io.github.shiiion.primehack/data/dolphin-emu/StateSaves/"
 }
 
 
